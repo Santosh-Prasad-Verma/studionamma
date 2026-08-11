@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #e4e4e4;
+        }
+
+        header {
+            font-family: "Gt Pressura Mono", Georgia, sans-serif;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dm {
+            display: flex;
+            justify-content: space-between;
+            width: 800px;
+        }
+
+        .studio {
+            width: 200px;
+        }
+
+        .lt {
+            text-align: right;
+            width: 420px;
+        }
+
+        .container {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 160px;
+            font-family: "Mixtape Extra Condensed", Verdana, sans-serif;
+            font-weight: 800;
+        }
+
+        .mouse {
+            display: none;
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            top: 100px;
+            left: 0px;
+            z-index: 10;
+        }
+        .vid {
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* border: 2px solid black; */
+            padding: 0;
+            margin: 0;
+        }
+        .wt,.ca,.des{
+            display: flex;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .wt1,.wt2,.wt3,.wt4,.wt5,.wt6,.wt7,.wt8,.ca1,.ca2,.ca3,.ca4,.ca5,.ca6,.ca7,.ca8,.ca9,.des1,.des2,.des3,.des4,.des5,.des6,.des7{
+            animation: wt1 1s forwards;
+            opacity: 0;
+        }
+        @keyframes wt1{
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .wt1{
+            animation-delay: 0s;
+        }
+        .wt2{
+            animation-delay: 0.1s;
+        }
+        .wt3{
+            animation-delay: 0.2s;
+        }
+        .wt4{
+            animation-delay: 0.3s;
+        }
+        .wt5{
+            animation-delay: 0.4s;
+        }
+        .wt6{
+            animation-delay: 0.5s;
+        }
+        .wt7{
+            animation-delay: 0.6s;
+        }
+        .wt8{
+            animation-delay: 0.7s;
+        }
+        .ca1{
+            animation-delay: 0s;
+        }
+        .ca2{
+            animation-delay: 0.1s;
+        }
+        .ca3{
+            animation-delay: 0.2s;
+        }
+        .ca4{
+            animation-delay: 0.3s;
+        }
+        .ca5{
+            animation-delay: 0.4s;
+        }
+        .ca6{
+            animation-delay: 0.5s;
+        }
+        .ca7{
+            animation-delay: 0.6s;
+        }
+        .ca8{
+            animation-delay: 0.7s;
+        }
+        .ca9{
+            animation-delay: 0.8s;
+        }
+        .des1{
+            animation-delay: 0s;
+        }
+        .des2{
+            animation-delay: 0.1s;
+        }
+        .des3{
+            animation-delay: 0.2s;
+        }
+        .des4{
+            animation-delay: 0.3s;
+        }
+        .des5{
+            animation-delay: 0.4s;
+        }
+        .des6{
+            animation-delay: 0.5s;
+        }
+        .des7{
+            animation-delay: 0.6s;
+        }
+        .txt{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="studio">STUDIO NAMMA</div>
+        <div class="dm">
+            <div class="dark">DARK MODE</div>
+            <div class="menu">MENU</div>
+        </div>
+        <div class="lt">LET'S TALK!</div>
+    </header>
+
+    <div class="container">
+        <div class="mouse">
+            <video class="vid" autoplay muted loop playsinline>
+                <source src="https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa5030619737bde7460e5_Home-Hero-DK%20ModeV4-transcode.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="txt">   
+            <div class="wt">
+
+                <span class="wt1">W</span>
+                <span class="wt2">E</span>
+                <span class="wt3">&nbsp;</span>
+                <span class="wt4">T</span>
+                <span class="wt5">H</span>
+                <span class="wt6">I</span>
+                <span class="wt7">N</span>
+                <span class="wt8">K</span>
+            </div>
+            <div class="ca">
+                <span class="ca1">C</span>
+                <span class="ca2">R</span>
+                <span class="ca3">A</span>
+                <span class="ca4">F</span>
+                <span class="ca5">T</span>
+                <span class="ca6">&nbsp;</span>
+                <span class="ca7">A</span>
+                <span class="ca8">N</span>
+                <span class="ca9">D</span>
+            </div>
+            <div class="des">
+                <span class="des1">&nbsp;</span>
+                <span class="des2">D</span>
+                <span class="des3">E</span>
+                <span class="des4">S</span>
+                <span class="des5">I</span>
+                <span class="des6">G</span>
+                <span class="des7">N</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-2">
+        <iframe src="https://player.vimeo.com/video/1127104834?background=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Showreel_Namma_EN" data-ready="true">
+  </iframe>
+    </div>
+    <div class="footer">
+        <svg class="footer_logo_stretch" width="100%" height="100%" viewBox="0 0 1472 475" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0H121.01L186.954 393.455H189.673L173.357 200.465L166.559 0H256.297V475H135.286L71.3823 78.8269H69.3428L82.2596 274.535L89.7378 475H0V0Z" fill="currentColor"></path>
+    <path d="M268.04 475L322.426 0H450.914L508.02 475H416.243L408.085 363.555H365.935L357.777 475H268.04ZM367.975 279.292H405.366L387.69 72.0315H384.971L367.975 279.292Z" fill="currentColor"></path>
+    <path d="M519.832 475V0H659.198L678.233 200.465L689.79 383.941H691.83L702.707 200.465L721.742 0H861.108V475H771.37L774.769 262.983L783.607 78.8269H781.567L738.058 475H640.162L596.653 78.8269H593.934L602.772 262.983L606.851 475H519.832Z" fill="currentColor"></path>
+    <path d="M879.665 475V0H1019.03L1038.07 200.465L1049.62 383.941H1051.66L1062.54 200.465L1081.57 0H1220.94V475H1131.2L1134.6 262.983L1143.44 78.8269H1141.4L1097.89 475H999.995L956.486 78.8269H953.767L962.604 262.983L966.683 475H879.665Z" fill="currentColor"></path>
+    <path d="M1232.02 475L1286.41 0H1414.89L1472 475H1380.22L1372.06 363.555H1329.92L1321.76 475H1232.02ZM1331.95 279.292H1369.35L1351.67 72.0315H1348.95L1331.95 279.292Z" fill="currentColor"></path>
+    </svg>
+    </div>
+
+    <script>
+
+        let container = document.querySelector('.container');
+        let mouse = document.querySelector('.mouse');
+        let prevx = 1;
+        let tempdeg = 1;
+
+        container.addEventListener('mousemove', (event) => {
+            mouse.style.display = 'block';
+            let xcod = event.clientX;
+            let ycod = event.clientY;
+            mouse.style.left = xcod + 'px';
+            mouse.style.top = ycod + 'px';
+
+            if (prevx > xcod) {
+                tempdeg -= 1;
+                mouse.style.transform = `rotate3d(0,1,0,${tempdeg}deg)`;
+            } else {
+                tempdeg += 1;
+                mouse.style.transform = `rotate3d(0,1,0,${tempdeg}deg)`;
+            }
+            prevx = xcod;
+        })
+
+
+
+        // Footer
+        let box = document.querySelector('.footer');
+        let nammaBoxHeight = 0;
+        let isBoxVisible = false;
+        window.addEventListener('wheel', (event) => {
+            if (event.deltaY > 0) {
+                console.log('scrolling up');
+                if (isBoxVisible) {
+                    document.body.classList.remove('lock-page-scroll');
+                    event.preventDefault();
+                    nammaBoxHeight += 2;
+                    box.style.height = nammaBoxHeight + 'px';
+                }
+            }
+
+
+        else if(event.deltaY<0){
+            console.log('scrolling down');
+            if(nammaBoxHeight>0){
+                document.body.classList.add('lock-page-scroll');
+                event.preventDefault();
+                nammaBoxHeight-=2;
+                box.style.height=nammaBoxHeight+'px';
+            }
+        }
+        }
+
+     }, {passive:false})
+        const observer=new IntersectionObserver((entries)=>{
+            const entry=entries[0];
+                if(entry.isIntersecting){
+                    console.log('box arrived');
+                    console.log(entry.target);
+                    isBoxVisible=true;
+                }
+                else if(!entry.isIntersecting){
+                    entry.target.classList.remove('show');
+                }
+            })
+        },
+    </script>
+
+</body>
+
+</html>
