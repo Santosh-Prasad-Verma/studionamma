@@ -4,7 +4,7 @@ A responsive front-end clone of the StudioNamma website built using HTML, CSS, a
 
 ## 🚀 Live Demo
 
-🔗 Live Website: https://gt-ashish.github.io/studionamma-clone/
+🔗 Live Website: 
 
 ## 📌 Features
 
@@ -47,8 +47,7 @@ This project was built as a front-end practice project to improve skills in:
 
 Visit the live website to explore the complete design:
 
-👉 [https://gt-ashish.github.io/studionamma-clone/](https://gt-ashish.github.io/studionamma-clone/)
-
+👉 
 ## 💡 What I Learned
 
 Through this project, I gained hands-on experience with:
@@ -71,7 +70,7 @@ Through this project, I gained hands-on experience with:
 
 **Ashish Murarka**
 
-* GitHub: [https://github.com/GT-Ashish](https://github.com/GT-Ashish)
+* GitHub: 
 * LinkedIn: Add your LinkedIn profile link here
 
 ---
