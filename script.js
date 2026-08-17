@@ -56,16 +56,31 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", () => toggleModal(navMenu, false)));
     document.addEventListener("keydown", e => e.key === "Escape" && (toggleModal(talkModal, false), toggleModal(navMenu, false)));
 
-    // 5. Preloader Landing Video Fade-Out
+    // 5. Preloader Landing Video Smooth Exit Animation
     const preloader = document.getElementById("landingVideo");
+    const heroText = document.querySelector(".hero-text");
+    let isPreloaderDone = false;
+
     const hidePreloader = () => {
-        if (preloader && !preloader.classList.contains("fade-out")) {
+        if (preloader && !isPreloaderDone) {
+            isPreloaderDone = true;
             preloader.classList.add("fade-out");
-            setTimeout(() => preloader.style.display = "none", 600);
+
+            if (window.gsap && heroText) {
+                gsap.fromTo(heroText, 
+                    { y: 50, opacity: 0 },
+                    { y: 0, opacity: 1, duration: 1.3, delay: 0.15, ease: "power3.out" }
+                );
+            }
+
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 1100);
         }
     };
+
     preloader?.querySelector("video")?.addEventListener("ended", hidePreloader);
-    setTimeout(hidePreloader, 4000);
+    setTimeout(hidePreloader, 3800);
 
     // 6. WhatsApp Card & Button Toggle
     const waCard = document.querySelector('.whatsapp-card');
