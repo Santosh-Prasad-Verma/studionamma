@@ -1,0 +1,428 @@
+/* *********************************general********************************* */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 228, 228);
+    font-family:"Barlow Condensed", sans-serif;
+    letter-spacing: .25em;
+}
+
+.container{
+    width: 97%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    padding-bottom: 12em;
+}
+
+img , video{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* *********************************general********************************* */
+/* *********************************typography********************************* */
+.hero-text{
+    font-size: 18vw;
+    letter-spacing: -.04em;
+    font-weight: 1000;
+    line-height: .75em;
+    position: relative;
+    z-index: -2;
+}
+
+/* *********************************typography********************************* */
+
+
+/* *********************************header********************************* */
+.landing-video video{
+    z-index: 2;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.header-top, .header-bottom{
+    position: fixed;
+    left: 1em;
+    right: 1em;
+    z-index: 1;
+}
+
+.header-bottom{
+   bottom : 0;
+   align-items: end;
+}
+
+.header-top{
+    top: 1em;
+}
+
+.header-bottom-right i{
+    font-size: 2.5rem;
+}
+
+.header-top-right{
+    min-width: 380px;
+}
+
+.header-top-left{
+    min-width: 270px;
+}
+
+/* *********************************header********************************* */
+/* *********************************whatsapp-button********************************* */
+/* *********************************whatsapp-button********************************* */
+
+.whatsapp-button{
+    border: none;
+    padding: 1em 1.2em;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 255);
+}
+
+.whatsapp-button i{
+    font-size: 2.2rem;
+}
+
+.whatsapp-button-container{
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    bottom: 2.5em;
+    right: 1.2em;
+    z-index: 10;
+}
+
+.whatsapp-card{
+    width: 355px;
+    position: absolute;
+    background: rgb(21, 33, 40);
+    color: white;
+    top: -580%;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-family: arial;
+    border-radius: 15px;
+    display: none;
+}
+
+.whatsapp-card-top{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.147);
+    padding: 1.4em;
+}
+
+.whatsapp-card-primary img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+.whatsapp-card-primary{
+    position: relative;
+}
+
+
+.whatsapp-card-bottom{
+    margin: 3em 1em 1em;
+}
+
+.whatsapp-text{
+    background-color: rgba(255, 255, 255, 0.149);
+    font-size: 15px;
+    line-height: 20px;
+    padding: .5em 0 .5em 1em;
+    width: 254px;
+    border-radius: 15px;
+    margin-bottom: 2em;
+}
+.whatsapp-card-secondary span{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.whatsapp-card-close-button{
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 1rem;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.476);
+}
+
+.online-dot{
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(74, 213, 4);
+    border-radius: 4px;
+}
+
+.chat-button-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-button{
+    background: blue;
+    color: white;
+    padding: 1em 2em 1em 4em;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.chat-button-container i{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+/* *********************************hero********************************* */
+
+.hero{
+    height: 100vh;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.cursor{
+    z-index: -1;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: translate(-100%, -100%);
+    transition: all .15s ease-out; 
+    top: -50%;
+    left: -50%;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+/* .hero-cursor-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+} */
+
+.cursor-blue-dot{
+    /* height: 20px;
+    width: 20px;
+    background-color: blue;
+    border-radius: 50%; */
+    /* z-index: 1000; */
+    /* transform: translate(20%, 2%); */
+}
+
+/* *********************************hero********************************* */
+/* *********************************video********************************* */
+
+.video-section video{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* *********************************description********************************* */
+
+.description{
+    text-align: center;
+}
+
+.description span{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: .1em;
+}
+
+.description-primary{
+    letter-spacing: -.05em;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1em;
+    margin-top: 0;
+}
+
+/* *********************************description********************************* */
+/* *********************************playground********************************* */
+
+.playground a{
+    font-weight: 1000;
+    font-size: 13rem;
+    letter-spacing: -.03em;
+}
+
+.playground-link-container{
+    width: 100%;
+    justify-content: center;
+    margin: 9em 0;
+}
+
+.playground-cards-container{
+    flex-wrap: wrap;
+    row-gap: 1.5em;      
+}
+
+.playground-card{
+    width: 49%;
+    position: relative;
+    transition: all linear .2s;
+}
+
+.playground-card:hover{
+    scale: .98;
+}
+
+.playground-card:hover video{
+    opacity: 1;
+}
+
+.playground-card:hover img{
+    filter: blur(3px);
+}
+
+.playground-card img{
+    width: 100%;
+    border-radius: .5em;
+}
+
+.playground-video{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* *********************************playground********************************* */
+/* *********************************services********************************* */
+.services-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 8rem;
+    font-weight: 1000;
+    letter-spacing: -.03em;
+    line-height: .8em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.services-link-container, .work-link-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.services-link-container i, .work-link-container i{
+    margin-bottom: 5px;
+}
+
+/* ****************************************logos*************************************************** */
+
+.logo{
+    gap: 5em;
+}
+
+/* ****************************************logos*************************************************** */
+/* ****************************************work*************************************************** */
+
+.work-primary-text{
+    font-size: 10rem;
+    font-weight: 1000;
+    letter-spacing: -.03em;
+    line-height: .9em;
+    margin-bottom: 0;
+}
+
+.work-primary img{
+    width: 1em;
+    display: inline-block;
+    border-radius: .05em;
+}
+
+.work-secondary p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.work-link-container{
+    justify-content: left;
+}
+/* ****************************************work*************************************************** */
+/* ****************************************video-preview*************************************************** */
+
+.video-preview video{
+    width: 15%;
+    border-radius: .4em;
+}
+
+.video-preview{
+    margin-bottom: 0;
+    padding: 0;
+}
+/* ****************************************video-preview*************************************************** */
+/* *****************************************footer************************************************** */
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer{
+    margin-top: 4em;
+}
+
+.footer-text{
+    font-size: 31rem;
+    font-weight: 1000;
+    letter-spacing: -.05em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *****************************************footer************************************************** */
+
+
+
