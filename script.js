@@ -225,11 +225,41 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    document.querySelectorAll('.playground-card').forEach(card => {
-        new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting && card.classList.add('revealed')), { threshold: 0.15 }).observe(card);
-        const v = card.querySelector('.playground-video');
-        v && card.addEventListener('mouseenter', () => (v.currentTime = 0, v.play().catch(() => {})));
-    });
+    // 11. Playground Cards Left & Right Opening Scroll Reveal
+    const playgroundCards = document.querySelectorAll('.playground-card');
+    if (playgroundCards.length) {
+        playgroundCards.forEach((card, index) => {
+            const isLeft = card.classList.contains('card-left') || index % 2 === 0;
+            if (window.gsap && window.ScrollTrigger) {
+                gsap.fromTo(card,
+                    { 
+                        xPercent: isLeft ? -25 : 25,
+                        rotation: isLeft ? -3 : 3,
+                        opacity: 0
+                    },
+                    {
+                        xPercent: 0,
+                        rotation: 0,
+                        opacity: 1,
+                        duration: 1.4,
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 85%",
+                            toggleActions: "play none none none"
+                        }
+                    }
+                );
+            }
+            const v = card.querySelector('.playground-video');
+            if (v) {
+                card.addEventListener('mouseenter', () => {
+                    v.currentTime = 0;
+                    v.play().catch(() => {});
+                });
+            }
+        });
+    }
 
     const footerInner = document.querySelector('.footer-logo-stretch-inner');
     const footerFill = document.querySelector('.footer-logo-fill');
