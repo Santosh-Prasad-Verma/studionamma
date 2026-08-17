@@ -4,7 +4,7 @@ A pixel-perfect, responsive front-end clone of the **StudioNamma** website built
 
 ## 🚀 Live Demo
 
-🔗 **Live Website**: [Your Live Demo Link Here](https://your-demo-link.com)
+🔗 **Live Website**: [https://studionammaa.vercel.app/](https://studionammaa.vercel.app/)
 
 ---
 
